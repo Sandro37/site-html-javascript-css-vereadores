@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <script type="text/javascript" src="js/index.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROVA</title>
+</head>
+<body>
+    <div id="formulario">
+        <form id="form" name="formulario_eleicao">
+            <h1 id="titulo_form"> Formulário de Eleição</h1>
+            <label for="num_eleitores_municipio">Número de eleitores do município:<input type="number" required id="num_eleitores_municipio"></label>
+            <label for="num_cadeiras_camara_cidade">Números de cadeiras na câmara da cidade: <input type="number" required id="num_cadeiras_camara_cidade"></label>
+            <label for="num_abstencoes">Número de Abstenções: <input type="number" required id="num_abstencoes"></label>
+            <label for="num_votos_branco">Número de votos em Branco: <input type="number" required id="num_votos_branco"></label>
+            <label for="num_votos_nulos">Número de votos nulos: <input type="number"required id="num_votos_nulos"></label>
+            <label for="num_votos_partido_recebeu">Número de votos que o partido recebeu: <input type="number" required id="num_votos_partido_recebeu"></label>
+            <label for="nome_partido">Nome do partido: <input type="text" required id="nome_partido"></label>
+            <input type="reset" value="Apagar">
+            <input type="button" value="Enviar" onclick="pegarDados()">
+            <p id="resultado"></p>
+        </form>
+    </div>
+</body>
+</html>
